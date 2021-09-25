@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student managment system</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <h1>SMS Application</h1>
+        <span class="cursive">(Student managment system)</span> 
+    </header>
+
+    <div id="registration-box" >
+        <img class="close" src="https://img.icons8.com/fluency/48/000000/close-window.png"/>
+        <div class="profile-foto">
+            <input id="profile-button" style="display: none;" type="file"><img class="profile-upload" src="https://img.icons8.com/color/48/000000/add--v1.png"/>
+        </div>
+        
+        <h2 class="detail-header">Student registration</h2>
+        <p style="color: teal;">Please provide the following information.</p>
+        <div id="success" class="alert alert-success" role="alert">
+            Student registered successfully!
+          </div>
+          <div id="danger" class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+        <form id="registration-form" action="/add" method="POST">
+            <p class="input-fields">
+            Name: <input name="name" class="fields" type="text">
+            </p>
+            <p class="input-fields">
+            Guardian name: <input name="guardianName" class="fields" type="text">
+            </p>
+            <p class="input-fields">
+            Roll no.: <input name="rollNo" class="fields" type="number">
+            </p>
+            <p class="input-fields">
+            Age: <input name="age" class="fields" type="number" min="0">
+            </p>
+            <p class="input-fields">
+            Phone: <input name="telephone" class="fields" type="tel">
+            </p>
+            <p class="input-fields">
+            Notes: <input name="notes" class="fields" type="text">
+            </p>
+            <div class="input-fields">
+            <button class="fields" type="submit" id="register-botton">Register</button>
+            </div>
+            
+        </form>
+    </div>
+   
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>

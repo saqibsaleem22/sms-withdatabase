@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace !important;
+   
+}
+header {
+    font-style: normal;
+    background-color:teal;
+    padding: 5px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+.cursive {
+    display: block;
+    font-style: italic;
+    color: sandybrown;
+    font-size: 1em;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 5em;
+    font-size: 2em;
+}
+.button {
+    width: 150px;
+    height: 150px;
+    font-size: large;
+    border: none;
+    color: teal;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.button img {
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      
+}
+.button p {
+    margin-top: 8px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+#registration-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-color: sandybrown;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+.close {
+    position: fixed;
+    left: 100%;
+    top: -6%;
+    cursor: pointer;
+}
+
+.input-fields {
+    padding: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    
+}
+
+.fields {
+    font-size: 20px;
+    border: 2px solid rgb(104, 187, 187);
+    outline: none;
+    padding: 2px;
+    position: fixed;
+    right: 0%;
+}
+
+.fields:hover {
+    border-color: teal;
+}
+
+#register-botton {
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgb(104, 187, 187);
+    color: #fff;
+}
+
+#register-botton:hover {
+    background-color: teal;
+    cursor: pointer;
+
+}
+
+#registration-form {
+    margin-top: 20px;
+}
+
+div.input-fields {
+    height: 40px;
+}
+
+div.profile-foto {
+    width: 130px;
+    height: 145px;
+    position: fixed;
+    right: 100%;
+    margin-right: 40px;
+    border: 1px solid sandybrown;
+    background: url("profile.jpeg") no-repeat;
+    background-size: contain;
+}
+
+.profile-upload {
+    cursor: pointer;
+}
+
