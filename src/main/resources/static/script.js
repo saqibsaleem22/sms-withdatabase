@@ -23,9 +23,7 @@ const danger = document.getElementById("danger");
 if (status == "success!") {
     danger.style.display = "none";
     success.style.display = "block !important";
-} 
-
-else if (status == "failure!") {
+} else if (status == "failure!") {
     danger.style.display = "block !important";
     success.style.display = "none";
 } else {
