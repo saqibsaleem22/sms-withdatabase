@@ -49,6 +49,11 @@ public class HelloController {
                 return "register";
 	}
         
+        @RequestMapping("/display")
+	public String display() {
+                return "display";
+	}
+        
         @ResponseBody
         @RequestMapping(value="/random", produces="text/plain")
 	public String randomNumberGenerator() {
@@ -62,7 +67,7 @@ public class HelloController {
             , @RequestParam String guardianName, @RequestParam String rollNo, @RequestParam String age,@RequestParam String telephone,@RequestParam String notes) {
           // @ResponseBody means the returned String is the response, not a view name
           // @RequestParam means it is a parameter from the GET or POST request
-          try {
+            try {
             Student n = new Student();
             n.setName(name);
             n.setGuardianName(guardianName);
@@ -84,5 +89,7 @@ public class HelloController {
           // This returns a JSON or XML with the users
           return studentRepository.findAll();
         }
+        
+        
 
 }
